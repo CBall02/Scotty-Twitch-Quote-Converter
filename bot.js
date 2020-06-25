@@ -1,6 +1,6 @@
 // JavaScript source code
 
-//  npm install prompt
+//  npm install prompt-sync
 //  npm install tmi.js
 //  npm install minimist
 //  npm install node-fetch
@@ -115,7 +115,8 @@ client.connect();
 
 // Called every time a message comes in
 function onMessageHandler (target, context, msg, self) {
-  if (self) { return; } // Ignore messages from the bot
+    if (self) { return; } // Ignore messages from the bot
+    if (msg[0] !== '!') { return; } //Ignore non-cmds
 
   // Remove whitespace from chat message
     const commandName = msg.toLowerCase().trim();
@@ -127,7 +128,7 @@ function onMessageHandler (target, context, msg, self) {
             var parsedcmd = eval('`' + unparsedCMD + '`');
             client.say(target, "WARNING: By confiming you will automatically add all quotes in the current format. If it is incorrect, potentially hundreds of quotes will be added incorrectly.");
             client.say(target, '"' + parsedcmd + '"');
-            client.say(target, 'Confirm in node this is the correct way to add quotes. ');
+            client.say(target, 'Confirm in the node CONSOLE this is the correct way to add quotes. ');
             console.log(target, "WARNING: By confiming you will automatically add all quotes in the current format. If it is incorrect, potentially hundreds of quotes will be added incorrectly.");
             console.log('\n' + parsedcmd);
         }
@@ -153,7 +154,7 @@ function onMessageHandler (target, context, msg, self) {
                         game = dateAndGame.substring(gameStart, dateAndGame.length).trim();
                     }
                     cmdToTwitch(target, username, quote, date, game);
-                    sleep(500);
+                    sleep(6000);
                 }
             });
             console.log(`* Executed ${commandName} command`);
