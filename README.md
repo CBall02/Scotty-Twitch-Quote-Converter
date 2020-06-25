@@ -23,13 +23,7 @@ cd into the directory where the bot will be installed
 
 Once in navigated to this folder, install needed packages
 ```
-npm install tmi.js
-
-npm install node-fetch
-
-npm install prompt-sync
-
-npm install minimist
+npm install tmi.js node-fetch prompt-sync minimist
 ```
 ### Running the bot
 __Important note about Node.js command line. Right click is the paste command. Ctrl+C will immediatly exit the program__
