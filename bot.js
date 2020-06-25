@@ -129,7 +129,7 @@ function onMessageHandler (target, context, msg, self) {
             client.say(target, "WARNING: By confiming you will automatically add all quotes in the current format. If it is incorrect, potentially hundreds of quotes will be added incorrectly.");
             client.say(target, '"' + parsedcmd + '"');
             client.say(target, 'Confirm in the node CONSOLE this is the correct way to add quotes. ');
-            console.log(target, "WARNING: By confiming you will automatically add all quotes in the current format. If it is incorrect, potentially hundreds of quotes will be added incorrectly.");
+            console.log("WARNING: By confiming you will automatically add all quotes in the current format. If it is incorrect, potentially hundreds of quotes will be added incorrectly.");
             console.log('\n' + parsedcmd);
         }
         var confirmation = prompt('Confirm this is the correct format for adding quotes.  y/n\t');
