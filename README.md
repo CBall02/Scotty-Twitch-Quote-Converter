@@ -33,6 +33,7 @@ While still in that folder, run the command `node bot.js` and follow the prompts
 * `Twitch Name` is the name of the account sending the messages.
 * `Twitch OAuth Key` is that account's OAuth key.
 	* Can be obtained at https://twitchapps.com/tmi/
+		* Whichever account you are logged into will generate the key
 	* __Make sure to include `oauth:` when entering the key.__
 * `Target Channel` is the channel the messages will be sent in. This will likely be your main Twitch channel.
 * `Mixer Channel` is the Mixer channel you want to import the quotes from.
