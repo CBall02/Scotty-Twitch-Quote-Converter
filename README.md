@@ -22,7 +22,7 @@ npm install tmi.js
 
 npm install node-fetch
 
-npm install prompt
+npm install prompt-sync
 
 npm install minimist
 ```
