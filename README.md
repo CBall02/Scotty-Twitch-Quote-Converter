@@ -12,6 +12,11 @@ Install node.js https://nodejs.org/en/
 Once installed, create a folder where the bot will be intalled and copy `bot.js` into this folder
 
 Open the Node.js command prompt
+<div align="center">
+	<div>
+		<img width="500" src="media/Node Command Line.png" alt="Awesome Node.js">
+	</div>
+</div>
 
 cd into the directory where the bot will be installed
 * ex. If the directory is  C:\Bots\Twitch Quotes the command will be: `cd C:\Bots\Twitch Quotes`
@@ -48,7 +53,7 @@ While still in that folder, run the command `node bot.js` and follow the prompts
      
 After confirming that the quote format is correct, the console will show that you are connected to chat. To test the connection is working, type `!ping` in Twitch chat.
 
-To transfer the quotes, type in Twitch chat `!importscottyquotes`. This will then prompt you in the console to confirm the formatting is correct one more time. Once you confirm, the bot will start adding the quotes to the new bot.
+To transfer the quotes, type in Twitch chat `!importscottyquotes`. This will then prompt you in the __CONSOLE__ to confirm the formatting is correct one more time. Once you confirm, the bot will start adding the quotes to the new bot.
 
 Any quotes that the program detects as problematic will be outputed to the console. They will still be added but will need to be fixed manually.
 * The IDs given by the console are the ScottyBot ID.
