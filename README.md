@@ -12,9 +12,9 @@ Install node.js https://nodejs.org/en/
 Once installed, create a folder where the bot will be intalled and copy `bot.js` into this folder
 
 Open the Node.js command prompt
-<div align="center">
+<div align="Left">
 	<div>
-		<img width="500" src="media/Node Command Line.png" alt="Awesome Node.js">
+		<img width="500" src="Media/Node Command Line.png" alt="Awesome Node.js">
 	</div>
 </div>
 
